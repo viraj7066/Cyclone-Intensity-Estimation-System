@@ -32,10 +32,10 @@ Welcome to the Cyclone Intensity Estimation project! This web application levera
 ![Home Page](https://github.com/viraj7066/Cyclone-Intensity-Estimation-System/blob/main/Cyclone%20Intensity%20Estimation%20Final/Cyclone%20Intensity%20Estimation/Home.png?raw=true)
 > Home Page - A snapshot of the home page showcasing the main features and interface of the website.
 
-![Home Page (Mobile View)](screenshots/safety-tips-page.png)
+![Home Page (Mobile View)](https://github.com/viraj7066/Cyclone-Intensity-Estimation-System/blob/main/Cyclone%20Intensity%20Estimation%20Final/Cyclone%20Intensity%20Estimation/Home%20mobile.png?raw=true)
 > Safety Tips Page - A snapshot of the Home page (Mobile View).
 
-![History Page](screenshots/history-page.png)
+![History Page](https://github.com/viraj7066/Cyclone-Intensity-Estimation-System/blob/main/Cyclone%20Intensity%20Estimation%20Final/Cyclone%20Intensity%20Estimation/History.png?raw=true)
 > History Page - A snapshot of the history page displaying comprehensive data and records of past cyclones.
 
 
