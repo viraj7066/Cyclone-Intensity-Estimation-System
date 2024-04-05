@@ -29,7 +29,7 @@ Welcome to the Cyclone Intensity Estimation project! This web application levera
 ---
 
 ## Screenshots
-![Home Page](screenshots/home-page.png)
+![Home Page](https://github.com/viraj7066/Cyclone-Intensity-Estimation-System/blob/main/Cyclone%20Intensity%20Estimation%20Final/Cyclone%20Intensity%20Estimation/Home.png?raw=true)
 > Home Page - A snapshot of the home page showcasing the main features and interface of the website.
 
 ![Home Page (Mobile View)](screenshots/safety-tips-page.png)
