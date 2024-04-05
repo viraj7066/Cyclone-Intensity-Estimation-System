@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="../assets/img/favicon/site.webmanifest">
+
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Our custom CSS -->
+  <link rel="stylesheet" href="../assets/css/index.css">
+  <title>CIE | About Us</title>
+
+  <!-- JavaScript files -->
+  <script src="../assets/js/navigation.js" defer></script>
+  <script src="../assets/js/tabs.js" defer></script>
+
+</head>
+
+<body class="crew">
+  <a class="skip-to-content" href="#main">Skip to content</a>
+  <header class="primary-header flex">
+    <!-- logo -->
+    <div>
+      <a href="../index.html"><img src="../assets/img/shared/logo.svg" alt="space tourism logo" class="logo"></a>
+    </div>
+
+    <!-- hamburger menu button -->
+    <button class="mobile-nav-toggle" aria-controls="primary-navigation">
+      <span class="sr-only" aria-expanded="false">Menu</span>
+    </button>
+
+    <!-- navbar -->
+    <nav>
+      <ul id="primary-navigation" data-visible="false" class="primary-navigation underline-indicators flex">
+        <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="../index.html"><span
+              aria-hidden="true">00</span>Home</a>
+        <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="../Cyclone_Intensity_Estimation-main/templates/home.html"><span
+              aria-hidden="true">01</span>Explore</a>
+        <li class="active"><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="./crew.html"><span
+              aria-hidden="true">02</span>About</a>
+        <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="./technology.html"><span
+              aria-hidden="true">03</span>History</a>
+      </ul>
+    </nav>
+
+    <!-- my ::after goes here -->
+  </header>
+
+  <main id="main" class="grid-container grid-container--crew flow">
+    <!-- crew title -->
+    <h1 class="numbered-title"><span aria-hidden="true">02</span> Meet our team</h1>
+
+    <!-- crew tabs -->
+    <div class="dot-indicators flex" role="tablist" aria-label="crew member list">
+      <button aria-selected="true" aria-controls="commander-tab" role="tab" data-image="commander-image" tabindex="0">
+        <span class="sr-only">The commander</span>
+      </button>
+      <button aria-selected="false" aria-controls="specialist-tab" role="tab" data-image="specialist-image"
+        tabindex="-1">
+        <span class="sr-only">The mission specialist</span>
+      </button>
+      <button aria-selected="false" aria-controls="pilot-tab" role="tab" data-image="pilot-image" tabindex="-1">
+        <span class="sr-only">The pilot</span>
+      </button>
+      <button aria-selected="false" aria-controls="engineer-tab" role="tab" data-image="engineer-image" tabindex="-1">
+        <span class="sr-only">The crew engineer</span>
+      </button>
+    </div>
+
+    <!-- commander info -->
+    <article class="crew-details flow" id="commander-tab" role="tabpanel" tabindex="0">
+      <header class="flow flow--space-small">
+        <h2 class="fs-600 uppercase ff-serif">Team Leader</h2>
+        <p class="fs-700 uppercase ff-serif">Viraj Gujar</p>
+      </header>
+      
+    </article>
+
+    <!-- mission specialist info -->
+    <article hidden class="crew-details flow" id="specialist-tab" role="tabpanel" tabindex="0">
+      <header class="flow flow--space-small">
+        <h2 class="fs-600 uppercase ff-serif">Project Specialist</h2>
+        <p class="fs-700 uppercase ff-serif">Viraj Gujar</p>
+      </header>
+      <p class="text-light">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </article>
+
+    <!-- pilot info -->
+    <article hidden class="crew-details flow" id="pilot-tab" role="tabpanel" tabindex="0">
+      <header class="flow flow--space-small">
+        <h2 class="fs-600 uppercase ff-serif">Coder</h2>
+        <p class="fs-700 uppercase ff-serif">Viraj Gujar</p>
+      </header>
+      <p class="text-light">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </article>
+
+    <!-- flight engineer info -->
+    <article hidden class="crew-details flow" id="engineer-tab" role="tabpanel" tabindex="0">
+      <header class="flow flow--space-small">
+        <h2 class="fs-600 uppercase ff-serif">Designer</h2>
+        <p class="fs-700 uppercase ff-serif">Viraj Gujar</p>
+      </header>
+      <p class="text-light">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </article>
+
+    <!-- commander image -->
+    <picture id="commander-image">
+      <source srcset="../assets/img/crew/vir.webp" type="image/webp">
+      <img src="../assets/img/crew/vir.png" alt="Viraj Gujar">
+    </picture>
+
+    <!-- mission specialist image -->
+    <picture hidden id="specialist-image">
+      <source srcset="../assets/img/crew/vir.webp" type="image/webp">
+      <img src="../assets/img/crew/vir.png" alt="Viraj Gujar">
+    </picture>
+
+    <!-- pilot image -->
+    <picture hidden id="pilot-image">
+      <source srcset="../assets/img/crew/vir.webp" type="image/webp">
+      <img src="../assets/img/crew/vir.png" alt="Viraj Gujar">
+    </picture>
+
+    <!-- flight engineer image -->
+    <picture hidden id="engineer-image">
+      <source srcset="../assets/img/crew/vir.webp" type="image/webp">
+      <img src="../assets/img/crew/vir.png" alt="Viraj Gujar">
+    </picture>
+  </main>
+</body>
+
+</html>

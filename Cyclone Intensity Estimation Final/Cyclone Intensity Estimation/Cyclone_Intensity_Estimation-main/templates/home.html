@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="../assets/img/favicon/site.webmanifest">
+
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Our custom CSS -->
+  <link rel="stylesheet" href="../../assets/css/index.css">
+  <title>CIE | History</title>
+  <title>Home</title>
+  <!-- JavaScript files -->
+  <script src="../assets/js/navigation.js" defer></script>
+  <script src="../assets/js/tabs.js" defer></script>
+		
+		<style>
+			body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('../../assets/img/technology/background-technology-desktop.jpg'); /* Replace 'path/to/your/background-image.jpg' with the actual path to your background image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    color: #ffffff; /* Text color for better readability on the background image */
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(62, 36, 36, 0.8); /* Semi-transparent background for better readability */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1, h2 {
+    color: #ffffff;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+input[type="file"] {
+    margin-bottom: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.col {
+    padding: 20px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+		</style>
+	</head>
+	<body 	class="destination">
+		<a class="skip-to-content" href="#main">Skip to content</a>
+		<header class="primary-header flex">
+		  <!-- logo -->
+		  <div>
+			<a href="../index.html"><img src="../../assets/img/shared/logo.svg" alt="space tourism logo" class="logo"></a>
+		  </div>
+	  
+		  <!-- hamburger menu button -->
+		  <button class="mobile-nav-toggle" aria-controls="primary-navigation">
+			<span class="sr-only" aria-expanded="false">Menu</span>
+		  </button> 
+	  
+		  <!-- navbar -->
+		  <nav>
+			<ul id="primary-navigation" data-visible="false" class="primary-navigation underline-indicators flex">
+			  <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="../../index.html"><span
+					aria-hidden="true">00</span>Home</a>
+			  <li class="active"><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="../templates/home.html"><span
+					aria-hidden="true">01</span>Explore</a>
+			  <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="../../html/crew.html"><span
+					aria-hidden="true">02</span>About</a>
+			  <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="../../html/technology.html"><span
+					aria-hidden="true">03</span>History</a>
+			</ul>
+		  </nav>
+	  
+		  <!-- my ::after goes here -->
+		</header>
+			  
+		<div align="center">
+			<h1> Cyclone Intensity Estimation </h1>
+			<form action='/' method="post" enctype="multipart/form-data">
+				<input type="file" name="image" accept="image/jpeg">
+				<button type='submit'>Upload Image</button>
+			</form> <hr>
+		</div>
+		<div class="container">
+		{% if data %}
+			<div class="row">
+				<div class="col">
+					<h2> Input </h2>
+					<img src="{{data.path}}" width="300" height="300"/>
+				{% endif %}
+				</div>
+		
+				<div class="col">
+				{% if data %}
+					{% if data.status_code==404 %}
+						<h2> Error </h2>
+						<p> Message: {{data.message}} </p>
+					{% else %}
+						<h2> Prediction Probabilities </h2>
+						<ul>
+							{% for i,p in data['prediction']%}
+								{% if p!=0 %}
+									<li>T{{i+1}} : {{p}}</li>
+								{%endif%}
+							{% endfor %}
+						</ul>
+					{% endif %}	
+				</div>
+			</div> <hr>
+			<div class="row">
+				<div class="col" align="center"><h2>Result: Estimated intensity is: T{{data.result}} </h2></div>
+			</div>
+		{% endif %}
+		</div>
+	</body>
+</html>
