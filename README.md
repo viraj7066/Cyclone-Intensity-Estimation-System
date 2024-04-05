@@ -5,7 +5,7 @@ Welcome to the Cyclone Intensity Estimation project! This web application levera
 
 ---
 
-## Features
+## Features 
 - **Explore**: Upload cyclone images to obtain detailed information and insights.
 - **History**: Access comprehensive data and records of past cyclones for research and analysis.
 - **Visualization**: Interact with interactive maps and charts showcasing current cyclone paths, intensities, and trends.
